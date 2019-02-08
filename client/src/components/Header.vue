@@ -9,9 +9,9 @@
     <div class="left-wrapper">
       <img class="logo" src="/logo.png" alt="logo">
       <span class="name">Service Monitor</span>
-      <span class="version">v1.0.2</span>
+      <span class="version">v1.0.1</span>
     </div>
-    <a class="github" href="">
+    <a class="github" href="https://github.com/dongkuo/spring-boot-monitor">
       <svg height="24" class="octopus" viewBox="0 0 16 16" version="1.1" width="27"
            aria-hidden="true">
         <path fill-rule="evenodd"

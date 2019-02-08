@@ -34,8 +34,9 @@ socket.listen = function (server, context) {
       return
     }
     context.sessionStore.get(signedSid, (error, session) => {
-      if (error) {
+      if (error || !session['login_info']) {
         debug('auth fail')
+        client.emit('forbidden', 'Please sign in first.')
         client.disconnect()
         return
       }

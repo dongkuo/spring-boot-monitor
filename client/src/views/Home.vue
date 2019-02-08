@@ -33,7 +33,7 @@
       ...mapState(['socket'])
     },
     created() {
-      this.$store.commit('socketConnect', 'http://localhost:4000')
+      this.$store.commit('socketConnect', '')
 
       this.socket.on('connect', () => {
         console.log('connected')

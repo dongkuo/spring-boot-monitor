@@ -6,7 +6,7 @@
       <div class="input-wrapper">
         <Input class="input" prefix="ios-contact" placeholder="Input your name" v-model="user.username"/>
         <Input class="input" prefix="ios-lock" type="password" placeholder="Input your password"
-               v-model="user.password"/>
+               v-model="user.password" @keyup.enter.native="signIn"/>
         <Button type="success" long @click="signIn" :loading="isSigningIn">Sign In</Button>
       </div>
     </div>
