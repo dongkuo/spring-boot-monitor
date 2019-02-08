@@ -1,0 +1,23 @@
+{
+  "host": "0.0.0.0",
+  "port": 4000,
+  "auth": {
+    "admin": "123456"
+  },
+  "session": {
+    "secret": "7b8621d36cac4bfb",
+    "key": "sid"
+  },
+  "services": {
+    "cloud-biz-enterprise": {
+      "actuator": "http://localhost:8400/actuator/info",
+      "log": "/Users/derker/Desktop/cloud-biz-enterprise.log.2019-01-29.0"
+    },
+    "cloud-biz-equipment": {
+      "actuator": "http://localhost:8401/actuator/info",
+      "log": "/Users/derker/Workspaces/java-demo/bar.log"
+    }
+  },
+  "push-service-info-interval": 3000,
+  "max-log-line": 1000
+}

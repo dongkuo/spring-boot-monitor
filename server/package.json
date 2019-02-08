@@ -1,0 +1,31 @@
+{
+  "name": "spring-boot-monitor",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start app.js -- -c config.json",
+    "restart": "pm2 restart app.js -- -c config.json",
+    "stop": "pm2 stop app.js",
+    "serve": "DEBUG=http,socket DEBUG_HIDE_DATE=false nodemon --ignore sessions app.js -c config.json"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "compression": "^1.7.3",
+    "connect-history-api-fallback": "^1.6.0",
+    "cookie": "^0.3.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-favicon": "^2.0.1",
+    "express-session": "^1.15.6",
+    "read-last-lines": "^1.6.0",
+    "session-file-store": "^1.2.0",
+    "socket.io": "^2.2.0",
+    "tail": "^2.0.2",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "pm2": "^3.2.9"
+  }
+}
