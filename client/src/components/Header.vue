@@ -11,7 +11,7 @@
       <span class="name">Service Monitor</span>
       <span class="version">v1.0.1</span>
     </div>
-    <a class="github" href="https://github.com/dongkuo/spring-boot-monitor">
+    <a class="github" href="https://github.com/dongkuo/spring-boot-monitor" target="_blank">
       <svg height="24" class="octopus" viewBox="0 0 16 16" version="1.1" width="27"
            aria-hidden="true">
         <path fill-rule="evenodd"

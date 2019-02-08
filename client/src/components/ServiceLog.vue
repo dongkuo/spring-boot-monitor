@@ -117,6 +117,7 @@
     width: 36px;
     z-index: 999;
     padding: 8px 0;
+    border-right: 1px solid #eee;
   }
 
   .line-content-wrapper {
