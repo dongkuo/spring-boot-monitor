@@ -3,7 +3,7 @@
 A spring boot application monitor.
 
 
-# Screenshot
+## Screenshot
 
 ![spring-boot-monitor-1.png](./screenshot/spring-boot-monitor-1.png)
 
