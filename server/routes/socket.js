@@ -99,12 +99,12 @@ function broadcastServiceInfo(services, interval) {
       axios.get(service['actuator'], {timeout: 1000 * 5})
         .then(resp => {
           allServiceInfo[name] = {name: name, status: 'UP', info: resp.data}
+          debug('broadcast service info')
+          io.emit('service-info', allServiceInfo[name])
         })
         .catch(err => {
           debug(`request service [${name}] info error: ${err}`)
           allServiceInfo[name] = {name: name, status: 'DOWN'}
-        })
-        .finally(() => {
           debug('broadcast service info')
           io.emit('service-info', allServiceInfo[name])
         })

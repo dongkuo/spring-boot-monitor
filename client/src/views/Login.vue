@@ -33,11 +33,10 @@
             }
             this.$Message.success(resp.data.msg)
             this.$router.push('/')
+            this.isSigningIn = false
           })
           .catch(err => {
             console.log(err)
-          })
-          .finally(() => {
             this.isSigningIn = false
           })
       }
